@@ -1,0 +1,372 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.reseaux a {
+    color: #1BB3E2;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 10;
+}
+
+button {
+    padding: 16px 64px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+}
+
+.yellow-btn {
+    background-color: #FECF28;
+}
+
+.blue-btn {
+    background-color: #1BB3E2;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.main-header {
+    height: 90vh;
+    background: linear-gradient(#ffffff, #ffffff63), url(./assets/img/miel.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 40px;
+    color: #444444;
+}
+
+.logo-cn {
+    position: sticky;
+    top: -19vh;
+    z-index: 110;
+    text-align: center;
+}
+
+.logo-cn img {
+    width: 60px;
+    height: auto;
+    position: relative;
+    top: 20vh;
+}
+
+.main-header p {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.circle-img-cn {
+    width: 400px;
+    height: 400px;
+    border-radius: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-img-cn img {
+    width: 400px;
+    height: auto;
+}
+
+.value-prop {
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.vp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-family: 'BioRhyme', serif;
+    width: 80%;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.consommer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 80px;
+    background-color: #FECF28;
+}
+
+h1 * {
+    font-family: 'BioRhyme', cursive;
+}
+
+.color-violet {
+    color: #C531AD;
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.testimonial-cn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.testimonial {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.testimonial i {
+    color: #777777;
+    font-weight: 2em;
+    padding-bottom: 16px;
+}
+
+.testimonial p {
+    text-align: justify;
+}
+
+.apropos {
+    margin: 40px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: auto;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.photo-name {
+    padding-right: 40px;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer {
+    background-color: #efefef;
+    margin-top: 80px;
+}
+
+footer a {
+    font-size: 24px;
+    color: #777777;
+    padding: 16px;
+}
+
+.nos-produits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1px;
+}
+
+.produit {
+    margin: 16px;
+    box-shadow: 1px -0.5px 10px #cccccc;
+}
+
+.produit .img-cn {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.produit .img-cn img {
+    width: 100%;
+    height: auto;
+}
+
+.produit p, .produit h2 {
+    padding: 8px 32px;
+}
+
+.produit h2 {
+    margin-top: 8px;
+    color: #C531AD;
+    font-weight: bold;
+}
+
+footer {
+    padding: 16px;
+}
+
+footer p {
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+}
+
+.img-carte {
+    width: 80%;
+    height: auto;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 20px;
+}
+
+.coordonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.coordonnes p {
+    text-align: left;
+}
+
+.contacts h2 {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .circle-img-cn {
+        width: 200px;
+        height: 200px;
+    }
+    .circle-img-cn img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    button {
+        padding: 8px 16px;
+    }
+    .main-header h1 {
+        font-size: 1.5em;
+        font-weight: normal;
+        padding: 4px;
+        line-height: 1.7em;
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+        color: black;
+    }
+    .vp {
+        grid-template-columns: 100%;
+    }
+    .vp h1 {
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .circle-img-cn {
+        width: 200px;
+        height: 200px;
+    }
+    .circle-img-cn img {
+        width: 200px;
+    }
+    .img-carte {
+        margin-top: 40px;
+    }
+    .testimonial-cn {
+        grid-template-columns: 100%;
+    }
+    .produits {
+        grid-template-columns: 100%;
+    }
+}
