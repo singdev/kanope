@@ -7,6 +7,11 @@
     --animate-duration: 2s;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 .plain-round-btn {
     border: none;
     background-color: dodgerblue;
@@ -168,7 +173,9 @@ h2 {
     padding-top: 80px;
     padding-bottom: 80px;
     margin-top: 0px;
-    background-color: #FECF28;
+    background: linear-gradient(#FECF2855, #FECF2855), url(./assets/img/miel.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 video, .video {
@@ -191,7 +198,6 @@ h1 * {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 80px;
 }
 
 .testimonial-cn {
@@ -292,6 +298,21 @@ footer a {
 .produit {
     margin: 16px;
     box-shadow: 1px -0.5px 10px #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produit a {
+    display: inline-block;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .produit .img-cn {
@@ -399,8 +420,6 @@ footer.ancre {
         line-height: 1.7em;
         text-align: center;
         font-family: 'Cabin', sans-serif;
-        color: black;
-
     }
     .vp {
         grid-template-columns: 100%;

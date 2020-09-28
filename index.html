@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Nos produits apicoles sont
+    méticuleusement récoltés localement pour le bonheur des consommateurs friands
+    de miel et à la recherche d’un produit de qualité, équilibré et écologiquement responsable.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./landing_page_mobile.css">
+    <link rel="stylesheet" href="dessin.css">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700;800&family=Cabin&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -15,7 +19,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./arrow.css">
-    <title>Kanopee</title>
+    <title>Kanopee | Produit apicoles  produits au Gabon</title>
 </head>
 
 <body>
@@ -55,6 +59,7 @@
                     src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
             </a>
         </div>
+        <div class="dessins"></div>
         <div style="padding-top: 20px" id="presentation" class="ancre value-prop">
             <div class="vp" data-aos="fade-left">
                 <div class="circle-img-cn">
@@ -99,13 +104,12 @@
             <div class="testimonial-cn">
                 <div class="testimonial" data-aos="zoom-in-right">
                     <i class="fas fa-quote-left"></i>
-                    <p>Délicieux , <br>
-                        Je le prends mélange avec du citron, je le donne aussi à mes enfants en cas de toux, et même en
-                        prévention, car elles adorent ca, des fois sur des bobos pour les cicatriser, et avec le thé.
+                    <p>Excellente qualité, <br>
+                        Je l utilisé à la place du sucre pour le lait et le thé...mais aussi sur le corps de
+                        mes...victimes 😌
                         <br>
-                        Meilleur au niveau du goût (Par rapport au autres miel).
                     </p>
-                    <p style="color: grey;"><em>Ma maman</em></p>
+                    <p style="color: grey;"><em>Dibasso Olivier</em></p>
                 </div>
 
                 <div class="testimonial" data-aos="zoom-in-left">
@@ -113,7 +117,7 @@
                     <p>Excellent <br>
                         Il est de bien meilleure qualité que les autres miels que l on peut trouver à Libreville mais
                         nous aimerions de plus gros pots.</p>
-                    <p style="color: grey;"><em>Par l equipe de l ONG PROGRAM</em></p>
+                    <p style="color: grey;"><em>Mbina</em></p>
                 </div>
             </div>
         </div>
@@ -123,61 +127,88 @@
 
             <div class="produits">
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Miel.jpg" alt="">
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Miel.jpg" alt="">
+                        </div>
+                        <h2>Miel</h2>
+                        <p>Issu de la récolte des productions d’abeilles en élevage dans le respect des normes
+                            biologiques. Vendu en pot de 200 ml et en gros.</p>
                     </div>
-                    <h2>Miel</h2>
-                    <p>Issu de la récolte des productions d’abeilles en élevage dans le respect des normes
-                        biologiques. Vendu en pot de 200 ml et en gros.</p>
+                    <a href="mailto:zangobamerina@yahoo.fr?subject=Commander du miel">Commander</a>
                 </div>
 
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Cire d'abeil.jpg" alt="">
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Cire d'abeil.jpg" alt="">
+                        </div>
+                        <h2>Cire d’abeille</h2>
+                        <p>produit purifié, idéal comme base et émulsifiant pour la fabrication de vos
+                            produits cosmétiques (crème et savon). Vendu en bloc de 200g.</p>
                     </div>
-                    <h2>Cire d’abeille</h2>
-                    <p>produit purifié, idéal comme base et émulsifiant pour la fabrication de vos
-                        produits cosmétiques (crème et savon). Vendu en bloc de 200g.</p>
+                    <a href="mailto:zangobamerina@yahoo.fr?subject=Commander de la cire d'abeille">Commander</a>
+
                 </div>
 
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Cosmétique.jpg" alt="">
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Cosmétique.jpg" alt="">
+                        </div>
+                        <h2>Cosmétique à base de cire d’abille</h2>
+                        <p>Crème et savonnette cicatrisante et anti tache, leurs
+                            compositions typiquement naturelles vous permet un traitement sans effet secondaire.
+                            Vendu en format de 200 ml.</p>
                     </div>
-                    <h2>Cosmétique à base de cire d’abille</h2>
-                    <p>Crème et savonnette cicatrisante et anti tache, leurs
-                        compositions typiquement naturelles vous permet un traitement sans effet secondaire.
-                        Vendu en format de 200 ml.</p>
+                    <a
+                        href="mailto:zangobamerina@yahoo.fr?subject=Commande de la cosmétique à base de cire d'abeille">Commander</a>
+
                 </div>
 
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Gelée Royale.jpg" alt="">
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Gelée Royale.jpg" alt="">
+                        </div>
+                        <h2>Gelée royale </h2>
+                        <p>sa consommation interne stimule le système immunitaire. Elle permet de
+                            lutter contre les carences et prévient les maladies dégénératives. En externe elle ralentit
+                            le
+                            vieillissement de la peau, et élimine les rides. Vendu en format de 50 ml pour la
+                            consommation interne régulière et comme matière première pour la fabrication de vos
+                            produits cosmétiques.</p>
                     </div>
-                    <h2>Gelée royale </h2>
-                    <p>sa consommation interne stimule le système immunitaire. Elle permet de
-                        lutter contre les carences et prévient les maladies dégénératives. En externe elle ralentit le
-                        vieillissement de la peau, et élimine les rides. Vendu en format de 50 ml pour la
-                        consommation interne régulière et comme matière première pour la fabrication de vos
-                        produits cosmétiques.</p>
+                    <a href="mailto:zangobamerina@yahoo.fr?subject=Commander de la gelée royale">Commander</a>
+
                 </div>
 
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Propolis v2.jpg" alt="">
+
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Propolis v2.jpg" alt="">
+                        </div>
+                        <h2>Propolis</h2>
+                        <p>produit idéal comme conservateur alimentaire et cosmétique. Vendu en format de
+                            100g.</p>
                     </div>
-                    <h2>Propolis</h2>
-                    <p>produit idéal comme conservateur alimentaire et cosmétique. Vendu en format de
-                        100g.</p>
+                    <a href="mailto:zangobamerina@yahoo.fr?subject=Commander de la propolis">Commander</a>
+
                 </div>
 
                 <div class="produit" data-aos="fade-in-up">
-                    <div class="img-cn">
-                        <img src="./assets/img/produits/Pollen.jpg" alt="">
+
+                    <div>
+                        <div class="img-cn">
+                            <img src="./assets/img/produits/Pollen.jpg" alt="">
+                        </div>
+                        <h2>Pollen</h2>
+                        <p>est un complément alimentaire recommandé pour lutter contre la fatigue. Vendu en
+                            pot de 50 ml.</p>
                     </div>
-                    <h2>Pollen</h2>
-                    <p>est un complément alimentaire recommandé pour lutter contre la fatigue. Vendu en
-                        pot de 50 ml.</p>
+                    <a href="mailto:zangobamerina@yahoo.fr?subject=Commande du pollen">Commander</a>
+
                 </div>
             </div>
 
@@ -242,7 +273,9 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+        });
         document.querySelector('.menu-button').addEventListener('click', (e) => {
             const drawer = document.querySelector('.drawer');
             drawer.classList.toggle('show-drawer');

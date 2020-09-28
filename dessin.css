@@ -1,0 +1,26 @@
+#produit {
+    background: url(./assets/img/dessin/frame3.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+#temoignage {
+    background: url(./assets/img/dessin/frame2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+#presentation {
+    background: url(./assets/img/dessin/frame1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;    
+    background-position: right;
+}
+
+.vp {
+    background: url(./assets/img/dessin/frame4.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
