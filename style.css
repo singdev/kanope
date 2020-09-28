@@ -4,6 +4,17 @@
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
     scroll-behavior: smooth;
+    --animate-duration: 2s;
+}
+
+.plain-round-btn {
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 header {
@@ -64,8 +75,8 @@ p {
 
 .main-header {
     height: 90vh;
-    background: linear-gradient(#ffffff, #ffffff63), url(./assets/img/miel.jpg);
-    background-position: top;
+    background: linear-gradient(#0000009f, #0000009f), url(./assets/img/background.jpg);
+    background-position: center;
     background-size: cover;
     width: 100%;
     display: flex;
@@ -78,7 +89,7 @@ p {
     text-align: center;
     font-size: 1.5em;
     padding: 40px;
-    color: #444444;
+    color: #ffffff;
 }
 
 .logo-cn {
@@ -206,6 +217,17 @@ h1 * {
     text-align: justify;
 }
 
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 300px;
+}
+
 .apropos {
     margin: 40px;
     margin-top: 80px;
@@ -243,7 +265,8 @@ footer .socials {
 }
 
 footer {
-    background-color: #efefef;
+    background-color: #000000;
+    color: white;
     margin-top: 80px;
 }
 
@@ -299,6 +322,7 @@ footer a {
 footer {
     padding: 16px;
 
+
 }
 
 footer p {
@@ -318,6 +342,7 @@ footer p {
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
+    justify-content: space-between;
 }
 
 .contacts > div {
@@ -345,6 +370,14 @@ footer p {
     font-size: medium;
 }
 
+.ancre {
+    padding-top: 100px;
+}
+
+footer.ancre {
+    padding-top: 20px;
+}
+
 @media screen and (max-width: 1100px) {
     .circle-img-cn {
         width: 200px;
@@ -367,6 +400,7 @@ footer p {
         text-align: center;
         font-family: 'Cabin', sans-serif;
         color: black;
+
     }
     .vp {
         grid-template-columns: 100%;

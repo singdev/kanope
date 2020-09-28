@@ -4,35 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./landing_page_mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700;800&family=Cabin&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <title>Kanope</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./arrow.css">
+    <title>Kanopee</title>
 </head>
 
 <body>
 
     <header>
-        <div class="reseaux">
-            <a href="https://www.facebook.com/miel.apiculture/"><i class="fab fa-facebook"></i></a>
+        <img src="./assets/img/kanope.jpg" alt="" class="logo">
+        <div class="drawer">
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#presentation">Présentation</a>
+                <a href="#temoignage">Témoignages</a>
+                <a href="#produit">Produits</a>
+                <a href="#equipe">Equipe</a>
+            </nav>
+
+            <div class="actions">
+                <a href="#contacts" class="plain-round-btn">Contactez nous</a>
+            </div>
         </div>
-        <button class="blue-btn" onclick="window.location='#contacts'">Contactez nous</button>
+
+        <div class="menu">
+            <button class="menu-button">
+                <span>&times;</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
-    <div class="logo-cn">
-        <img class="logo" src="./assets/img/kanope.jpg" alt="Logo de Kanopé">
-    </div>
     <main>
         <div class="main-header">
-            <h1>Nos produits apicoles sont
+            <h1 class="animate__animated animate__backInUp animate__pulse">Nos produits apicoles sont
                 méticuleusement récoltés localement pour le bonheur des consommateurs friands
                 de miel et à la recherche d’un produit de qualité, équilibré et écologiquement responsable.</h1>
         </div>
-
-        <div class="value-prop">
-            <div class="vp">
+        <div class="downArrow bounce">
+            <a href="#presentation">
+                <img width="40" height="40" alt=""
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+            </a>
+        </div>
+        <div style="padding-top: 20px" id="presentation" class="ancre value-prop">
+            <div class="vp" data-aos="fade-left">
                 <div class="circle-img-cn">
                     <img src="./assets/img/apiculteur1.JPG" alt="">
                 </div>
@@ -42,7 +66,7 @@
                         grâce à leur implication dans la chaine de production.</p>
                 </article>
             </div>
-            <div class="vp">
+            <div class="vp" data-aos="fade-right">
                 <article>
                     <h1>Notre miel est produit au Gabon par des apiculteurs locaux.</h1>
                     <p>Nos produits KANOPEE se base sur un réseau de population locale en charge de l’entretien et du
@@ -53,7 +77,7 @@
             </div>
         </div>
 
-        <div class="video">
+        <div class="video" data-aos="zoom-in">
             <video src="./assets/video/video.mp4" controls></video>
         </div>
 
@@ -69,12 +93,11 @@
                 Il est un choix plus avisé pour les personnes atteintes de diabète.</p>
         </div>
 
-        <div class="testimonials">
-            <h1> <strong class="color-violet">Témoignages</strong> de personnes qui consomment les produits de Kanopée
-            </h1>
+        <div id="temoignage" class="ancre testimonials">
+            <h1>Témoignages</h1>
 
             <div class="testimonial-cn">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in-right">
                     <i class="fas fa-quote-left"></i>
                     <p>Délicieux , <br>
                         Je le prends mélange avec du citron, je le donne aussi à mes enfants en cas de toux, et même en
@@ -85,7 +108,7 @@
                     <p style="color: grey;"><em>Ma maman</em></p>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in-left">
                     <i class="fas fa-quote-left"></i>
                     <p>Excellent <br>
                         Il est de bien meilleure qualité que les autres miels que l on peut trouver à Libreville mais
@@ -95,11 +118,11 @@
             </div>
         </div>
 
-        <div class="nos-produits">
+        <div id="produit" class="ancre nos-produits">
             <h1 style="text-align: center;">Nos produits</h1>
 
             <div class="produits">
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Miel.jpg" alt="">
                     </div>
@@ -108,7 +131,7 @@
                         biologiques. Vendu en pot de 200 ml et en gros.</p>
                 </div>
 
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Cire d'abeil.jpg" alt="">
                     </div>
@@ -117,7 +140,7 @@
                         produits cosmétiques (crème et savon). Vendu en bloc de 200g.</p>
                 </div>
 
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Cosmétique.jpg" alt="">
                     </div>
@@ -127,7 +150,7 @@
                         Vendu en format de 200 ml.</p>
                 </div>
 
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Gelée Royale.jpg" alt="">
                     </div>
@@ -139,7 +162,7 @@
                         produits cosmétiques.</p>
                 </div>
 
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Propolis v2.jpg" alt="">
                     </div>
@@ -148,7 +171,7 @@
                         100g.</p>
                 </div>
 
-                <div class="produit">
+                <div class="produit" data-aos="fade-in-up">
                     <div class="img-cn">
                         <img src="./assets/img/produits/Pollen.jpg" alt="">
                     </div>
@@ -160,8 +183,8 @@
 
         </div>
 
-        <div class="apropos">
-            <h1 class="color-violet" style="text-align: center;">Qui sommes nous ?</h1>
+        <div id="equipe" class="ancre apropos">
+            <h1 style="text-align: center;">Qui sommes nous ?</h1>
 
             <div class="presentation">
                 <h2>Présentation de Kanopé</h2>
@@ -175,27 +198,29 @@
             <div class="team">
                 <h2>L'équipe</h2>
 
-                <div class="team-member">
-                    <div class="photo-name">
-                        <img src="./assets/img/pot.jpg" alt="Photo de madame Zang">
-                        <p class="nom">Rina Zang</p>
+                <div class="members">
+                    <div class="team-member">
+                        <div class="photo-name">
+                            <img src="./assets/img/rina.png" alt="Photo de madame Zang">
+                            <p class="nom color-violet">Rina Zang Obame</p>
+                            <p>Jeune passionnée par l’apiculture et les abeilles, elle dédie une partie de son
+                                temps à la protection de la nature.</p>
+                        </div>
                     </div>
-                    <p>Jeune passionnée par l’apiculture et les abeilles, elle dédie une partie de son
-                        temps à la protection de la nature.</p>
-                </div>
 
-                <div class="team-member">
-                    <div class="photo-name">
-                        <img src="./assets/img/pot.jpg" alt="Photo de madame Zang">
-                        <p class="nom">KOMBILA Dikenane</p>
+                    <div class="team-member">
+                        <div class="photo-name">
+                            <img src="./assets/img/dikenane.png" alt="Photo de Dikenane">
+                            <p class="nom color-violet">KOMBILA Dikenane</p>
+                            <p>Née et élevé dans l’amour de la nature il en a développé une Passion.</p>
+                        </div>
                     </div>
-                    <p>Née et élevé dans l’amour de la nature il en a développé une Passion.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
+    <footer id="contact" class="ancre">
         <h1 id="contacts">Contactez nous</h1>
         <div class="contacts">
             <div class="coordonnes">
@@ -215,6 +240,22 @@
         <p>&copy; 2020</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.querySelector('.menu-button').addEventListener('click', (e) => {
+            const drawer = document.querySelector('.drawer');
+            drawer.classList.toggle('show-drawer');
+            if (drawer.classList.contains('show-drawer')) {
+                document.querySelector('button.menu-button').querySelector('i').style.display = 'none';
+                document.querySelector('button.menu-button').querySelector('span').style.display = 'inline';
+
+            } else {
+                document.querySelector('button.menu-button').querySelector('i').style.display = 'inline';
+                document.querySelector('button.menu-button').querySelector('span').style.display = 'none';
+            }
+        })
+    </script>
 </body>
 
 </html>
