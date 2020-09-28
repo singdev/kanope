@@ -155,8 +155,13 @@ h2 {
     padding: 40px;
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 0px;
     background-color: #FECF28;
+}
+
+video, .video {
+    margin: 0;
+    padding: 0;
 }
 
 h1 * {
@@ -207,6 +212,12 @@ h1 * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+video {
+    width: 100%;
+    background-color: black;
+    height: 80vh;
 }
 
 .team-member img {
