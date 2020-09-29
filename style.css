@@ -250,9 +250,28 @@ video {
     height: 80vh;
 }
 
+.circle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1100px;
+}
+
 .team-member img {
-    width: 100px;
+    width: 200px;
     height: auto;
+}
+
+.team-member p {
+    padding: 8px;
+}
+
+.team-member a {
+    color: #C531AD;
+    text-decoration: none;
 }
 
 .team-member {
